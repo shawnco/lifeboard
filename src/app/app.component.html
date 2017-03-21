@@ -4,6 +4,7 @@
     <base href='/' />
     <title>Lifeboard</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class='container-fluid'>
@@ -16,6 +17,7 @@
             <div class='col-xs-2'>
                 <ul class='nav nav-stacked'>
                     <li *ngFor='let board of boards'><a routerLink='/dashboard/{{board.id}}'>{{board.name}}</a></li>
+                    <li><md-icon>add</md-icon> New Dashboard</li>
                 </ul>
             </div>
             <div class='col-xs-10'>
